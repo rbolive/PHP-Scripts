@@ -35,8 +35,17 @@
   	<?php endif ?>
 
     <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">Uitloggen</a> </p>
+    	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<div class="login-page">
+	<div class="form">
+	 <form class="register-form">
+		<img src="https://media.featuredcustomers.com/Company.logo/grafisch2x.png" width="150px" height="150px">
+		<h2>Gemaakt door: Rob Borsboom - 81297</h2>
+    		<p>Welkom <strong><?php echo $_SESSION['username']; ?></strong></p>
+    		<p> <a href="index.php?logout='1'" style="color: red;">Uitloggen</a> </p>
+	 </form>
+	</div>
+	</div>
     <?php endif ?>
 </div>
 		
