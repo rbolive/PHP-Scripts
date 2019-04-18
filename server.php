@@ -63,7 +63,7 @@ if (isset($_POST['login_user'])) {
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
-  	  $_SESSION['success'] = "$USER is nu ingelogd!";
+  	  $_SESSION['success'] = "$username is nu ingelogd!";
   	  header('location: index.php');
   	}else {
   		array_push($errors, "Verkeerd gebruikersnaam/wachtwoord combinatie");
